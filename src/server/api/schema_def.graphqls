@@ -4,9 +4,18 @@ type Count {
   amount: Int!
 }
 
+type Photo {
+  name: String
+  location: String
+  fname: String
+}
+
 type Query {
   # Counter
   count: Count
+
+  photo(photoName: String) : Photo
+
 }
 
 type Mutation {

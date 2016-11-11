@@ -11,6 +11,10 @@ const resolvers = {
     count(ignored1, ignored2, context) {
       return context.Count.getCount();
     },
+    photo(root, args, context, info) {
+      console.log('photoName', args.photoName);
+      return context.Photo.getPhoto(args.photoName);
+    }
   },
   Mutation: {
     addCount(_, { amount }, context) {

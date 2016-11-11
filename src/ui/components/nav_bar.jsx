@@ -10,7 +10,9 @@ const NavBar = () => (
 
       <ul className="nav navbar-nav">
         <li><a href="/graphiql">GraphiQL</a></li>
+        <li><Link to="/splash">Splash</Link></li>
       </ul>
+
     </div>
   </nav>
 );
